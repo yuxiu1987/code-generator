@@ -1,1 +1,14 @@
 G:\opensource\code generator\code generator\bin\Debug\code generator.exe.config
+G:\opensource\code generator\code generator\bin\Debug\code generator.exe
+G:\opensource\code generator\code generator\bin\Debug\code generator.pdb
+G:\opensource\code generator\code generator\obj\Debug\code generator.csprojResolveAssemblyReference.cache
+G:\opensource\code generator\code generator\obj\Debug\MainWindow.g.cs
+G:\opensource\code generator\code generator\obj\Debug\App.g.cs
+G:\opensource\code generator\code generator\obj\Debug\code generator_MarkupCompile.cache
+G:\opensource\code generator\code generator\obj\Debug\code generator_MarkupCompile.lref
+G:\opensource\code generator\code generator\obj\Debug\MainWindow.baml
+G:\opensource\code generator\code generator\obj\Debug\code generator.g.resources
+G:\opensource\code generator\code generator\obj\Debug\code_generator.Properties.Resources.resources
+G:\opensource\code generator\code generator\obj\Debug\code generator.csproj.GenerateResource.Cache
+G:\opensource\code generator\code generator\obj\Debug\code generator.exe
+G:\opensource\code generator\code generator\obj\Debug\code generator.pdb

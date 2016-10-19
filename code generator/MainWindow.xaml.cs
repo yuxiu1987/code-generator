@@ -23,6 +23,65 @@ namespace code_generator
         public MainWindow()
         {
             InitializeComponent();
+            KeywordTable.Add("class");
+            CodeDocument.Blocks.Add(new Paragraph(new Run("class")));
         }
+
+        FlowDocument CodeDocument = new FlowDocument();        
+
+        public List<string> KeywordTable = new List<string>();
+
+        /// <summary>
+        /// 向文本框中生成代码
+        /// </summary>
+        private void codeGenerating()
+        {
+            if (ClassNameInput.Text == null)
+            {
+                FlowDocument WarningInfo = new FlowDocument();
+                WarningInfo.Blocks.Add(new Paragraph(new Run("Please enter the class name!" + "\n")));
+                CodeText.Document = WarningInfo;
+            }
+            else
+            {
+                CodeDocument.Blocks.Add(new Paragraph(new Run("class " + ClassNameInput.Text + "\n" + "{" + "\n" + "}" + "\n")));
+                CodeText.Document = CodeDocument;
+            }
+        }       
+
+        /// <summary>
+        /// 鼠标点击按钮生成
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Generator_Click(object sender, RoutedEventArgs e)
+        {
+            codeGenerating();
+        }
+
+        /// <summary>
+        /// 回车直接生成
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ClassNameInput_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.Key == Key.Enter )
+            {
+                codeGenerating();
+            }
+        }
+
+        /// <summary>
+        /// 清空文本框
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Clear_Click(object sender, RoutedEventArgs e)
+        {
+            CodeText.Document.Blocks.Clear();
+        }
+
+
     }
 }
