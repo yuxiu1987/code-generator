@@ -1,0 +1,1 @@
+G:\opensource\code generator\code generator\bin\Debug\code generator.exe.config
