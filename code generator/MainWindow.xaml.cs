@@ -80,7 +80,7 @@ namespace code_generator
         }
 
         /// <summary>
-        /// 清空文本框
+        /// 清空文本框 clear richtextbox
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -89,6 +89,11 @@ namespace code_generator
             CodeText.Document.Blocks.Clear();
         }
 
+        /// <summary>
+        /// 按ESC直接清空文本框 clear the richtextbox with ESC keydown.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Viewbox_KeyDown(object sender, KeyEventArgs e)
         {
             if(e.Key == Key.Escape)
