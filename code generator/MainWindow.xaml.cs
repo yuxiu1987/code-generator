@@ -32,7 +32,7 @@ namespace code_generator
         public List<string> KeywordTable = new List<string>();
 
         /// <summary>
-        /// 向文本框中生成代码
+        /// 向文本框中生成代码  inert code to the richtextbox
         /// </summary>
         private void codeGenerating()
         {
@@ -50,7 +50,7 @@ namespace code_generator
         }       
 
         /// <summary>
-        /// 鼠标点击按钮生成
+        /// 鼠标点击按钮生成 generator code with mouse click event
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -60,7 +60,7 @@ namespace code_generator
         }
 
         /// <summary>
-        /// 回车直接生成
+        /// 回车直接生成 generator code with enter keydown event
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
