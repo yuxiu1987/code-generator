@@ -23,14 +23,10 @@ namespace code_generator
         public MainWindow()
         {
             InitializeComponent();
-            KeywordTable.Add("class");
-            CodeDocument.Blocks.Add(new Paragraph(new Run("class")));
         }
 
-        FlowDocument CodeDocument = new FlowDocument();        
-
-        public List<string> KeywordTable = new List<string>();
-
+        FlowDocument document = new FlowDocument();
+        
         /// <summary>
         /// 向文本框中生成代码  inert code to the richtextbox
         /// </summary>
@@ -44,10 +40,21 @@ namespace code_generator
             }
             else
             {
-                CodeDocument.Blocks.Add(new Paragraph(new Run("class " + ClassNameInput.Text + "\n" + "{" + "\n" + "}" + "\n")));
-                CodeText.Document = CodeDocument;
-            }
+                Run keyword = new Run("class");
+                keyword.Foreground = Brushes.Blue;
+                Run objectname = new Run(ClassNameInput.Text);
+                objectname.Foreground = Brushes.CadetBlue;
+                Paragraph code = new Paragraph();
+                code.Inlines.Add(keyword);
+                code.Inlines.Add(new Run(" "));
+                code.Inlines.Add(objectname);
+                code.Inlines.Add(new Run(" "+"\n" + "{ " + "\n" + " }" + "\n"));                
+
+                document.Blocks.Add(code);
+                CodeText.Document = document;
+            }            
         }       
+
 
         /// <summary>
         /// 鼠标点击按钮生成 generator code with mouse click event
@@ -82,6 +89,12 @@ namespace code_generator
             CodeText.Document.Blocks.Clear();
         }
 
-
+        private void Viewbox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.Key == Key.Escape)
+            {
+                CodeText.Document.Blocks.Clear();
+            }
+        }
     }
 }

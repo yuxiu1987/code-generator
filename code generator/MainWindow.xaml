@@ -20,16 +20,17 @@
             <Setter Property="Height" Value="15"/>
         </Style>
     </Window.Resources>
-    <Viewbox Stretch="Fill">
-        <Grid Height="450" Width="700">            
+    <Viewbox Stretch="Fill" KeyDown="Viewbox_KeyDown">
+        <Grid Height="450" Width="700">
+            <RichTextBox x:Name="CodeText" FontSize="12" HorizontalAlignment="Left" ScrollViewer.VerticalScrollBarVisibility="Auto"
+        		Height="250" Width="700" VerticalAlignment="Bottom"  Background="#FFFAFFE2"/>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Width="700" Height="30" Background="#FFC5E8F0">
                 <Label x:Name="ClassName" Content="ClassName:" Style="{Binding Source={StaticResource label}}" />
                 <TextBox x:Name="ClassNameInput" Height="22" TextWrapping="Wrap" VerticalAlignment="Center" Width="80" Margin="10,0,0,0" KeyDown="ClassNameInput_KeyDown"/>
                 <CheckBox x:Name="public" Content="Public" Style="{Binding Source={StaticResource checkbox}}"/>
                 <Button x:Name="Generator" Content="Generate"  VerticalAlignment="Center" Width="75" Margin="10,0,0,0" Click="Generator_Click"/>
             </StackPanel>
-            <RichTextBox x:Name="CodeText" FontSize="12" HorizontalAlignment="Left" Height="250" Width="700" VerticalAlignment="Bottom"  Background="#FFFAFFE2"/>
-            <Button x:Name="Clear" Content="Clear" HorizontalAlignment="Left" Margin="625,200,0,0" VerticalAlignment="Top" Width="75" Click="Clear_Click"/>
+            <Button x:Name="Clear" Content="Clear(ESC)" HorizontalAlignment="Left" Margin="625,200,0,0" VerticalAlignment="Top" Width="75" Click="Clear_Click"/>
         </Grid>
     </Viewbox>
 </Window>
