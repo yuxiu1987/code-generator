@@ -52,6 +52,7 @@ namespace code_generator
 
                 document.Blocks.Add(code);
                 CodeText.Document = document;
+                ClassNameInput.Text = null;
             }            
         }       
 
