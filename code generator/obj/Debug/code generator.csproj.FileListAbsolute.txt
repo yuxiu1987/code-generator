@@ -12,3 +12,20 @@ G:\opensource\code generator\code generator\obj\Debug\code_generator.Properties.
 G:\opensource\code generator\code generator\obj\Debug\code generator.csproj.GenerateResource.Cache
 G:\opensource\code generator\code generator\obj\Debug\code generator.exe
 G:\opensource\code generator\code generator\obj\Debug\code generator.pdb
+F:\myopensource\code-generator\code generator\bin\Debug\code generator.exe.config
+F:\myopensource\code-generator\code generator\obj\Debug\code generator.exe
+F:\myopensource\code-generator\code generator\obj\Debug\code generator.pdb
+E:\myopensource\code-generator\code generator\bin\Debug\code generator.exe.config
+E:\myopensource\code-generator\code generator\bin\Debug\code generator.exe
+E:\myopensource\code-generator\code generator\bin\Debug\code generator.pdb
+E:\myopensource\code-generator\code generator\obj\Debug\code generator.csprojResolveAssemblyReference.cache
+E:\myopensource\code-generator\code generator\obj\Debug\MainWindow.g.cs
+E:\myopensource\code-generator\code generator\obj\Debug\App.g.cs
+E:\myopensource\code-generator\code generator\obj\Debug\code generator_MarkupCompile.cache
+E:\myopensource\code-generator\code generator\obj\Debug\code generator_MarkupCompile.lref
+E:\myopensource\code-generator\code generator\obj\Debug\MainWindow.baml
+E:\myopensource\code-generator\code generator\obj\Debug\code generator.g.resources
+E:\myopensource\code-generator\code generator\obj\Debug\code_generator.Properties.Resources.resources
+E:\myopensource\code-generator\code generator\obj\Debug\code generator.csproj.GenerateResource.Cache
+E:\myopensource\code-generator\code generator\obj\Debug\code generator.exe
+E:\myopensource\code-generator\code generator\obj\Debug\code generator.pdb
